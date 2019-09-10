@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
       name_contents.each do |word|
         new_name_arr << word.capitalize
       end
-      new_name = name_contents.join(" ")
+      new_name = new_name_arr.join(" ")
       supplies = supply_array.join(", ")
       puts "  #{new_name}: #{supplies}"
     end
